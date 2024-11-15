@@ -1,0 +1,264 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  background-color: #fff;
+  height: 54px;
+  width: 100%;
+  border-bottom: 1px solid #dbdbdd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding-left: 7%;
+  z-index: 1;
+}
+
+.logo {
+  height: 29px;
+  width: 103px;
+}
+
+.icones-header {
+  margin-right: 10%;
+}
+
+.header-mobile {
+  display: none;
+}
+
+.conteudo {
+  width: 935px;
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+.principal {
+  background-color: #fafafa;
+  width: 614px;
+  height: 100%;
+  margin-top: 54px;
+}
+.sidebar {
+  width: 293px;
+  margin-top: 54px;
+  background-color: #fafafa;
+}
+
+.stories {
+  height: 118px;
+  width: 614px;
+  margin-top: 34px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.storie {
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9px;
+}
+
+.img-perfil {
+  width: 56px;
+  border-radius: 28px;
+  padding-bottom: 5px;
+}
+
+.img-perfil-pqn {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+
+.stories-mobile {
+  display: none;
+}
+
+.storie-mobile {
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9px;
+}
+
+.background-mobile {
+  position: relative;
+}
+
+.img-background {
+  width: 56px;
+  border-radius: 33px;
+}
+.img-perfil-mobile {
+  width: 50px;
+  border-radius: 28px;
+  position: absolute;
+  top: 1.5px;
+  left: 1.4px;
+}
+
+.post {
+  width: 614px;
+  height: 717px;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.header-post {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.nickname {
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #262626;
+}
+
+.imagem-post img {
+  width: 612px;
+  height: 612px;
+  padding-left: 1px;
+}
+
+.icones-post {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.bookmark {
+  position: absolute;
+  left: 550px;
+}
+
+.profile {
+  height: 85px;
+  width: 293px;
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.usuario {
+  margin-left: 15px;
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #8e8e8e;
+}
+
+.sugestoes {
+  font-size: 12px;
+  font-weight: 500;
+  color: #8e8e8e;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+.sugestao {
+  display: flex;
+  height: 35px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.infos-extras {
+  font-size: 11px;
+  font-weight: 400;
+  color: #c7c7c7;
+  margin-top: 50px;
+}
+
+.bottom-mobile {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+
+@media (max-width: 936px) {
+  .sidebar {
+    display: none;
+  }
+
+  .principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 615px) {
+  .header {
+    height: 0px;
+    display: none;
+  }
+
+  .header-mobile {
+    background-color: #fff;
+    height: 54px;
+    width: 100%;
+    border-bottom: 1px solid #dbdbdd;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .conteudo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fafafa;
+  }
+
+  .stories {
+    display: none;
+    height: 0px;
+  }
+
+  .stories-mobile {
+    height: 118px;
+    width: 100%;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .bottom-mobile {
+    display: flex;
+  }
+}
